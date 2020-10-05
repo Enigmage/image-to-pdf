@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block head %}
+
+<style>
+    .container{
+        background: #05386b;
+        color: #edf5e1;
+    }
+    .btn:hover { background:lightgreen; }
+</style>
+
+{% endblock %}
+{% block body %}
+<div class="container p-3 border">
+    <h3 class="text-center">Your file is ready !!</h3>
+    <br>
+    <div class="text-center">
+        <button class="btn btn-light" onclick="document.location='/download/{{filename}}'">Download</button>
+    </div>
+</div>
+{% endblock %}
