@@ -1,4 +1,4 @@
-Simple, no bloat images to pdf web app.
+My implementation of a images to pdf app using Flask(python).
 
 ### Steps to reproduce environment
 
