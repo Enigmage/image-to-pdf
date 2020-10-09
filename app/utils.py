@@ -14,16 +14,12 @@ def image_to_pdf_normal(filenames: list, pdfname):
         img_list.append(image_x_rgb)
 
     first_image_RGB.save(os.path.join(app.config['DOWNLOAD_PATH'], f"{pdfname}.pdf"), resolution=100.0, save_all=True, append_images=img_list)
-        
-    
-    
+
 def remove_files(filenames):
     for f in filenames:
         path = os.path.join(app.config['UPLOAD_PATH'], f)
         if os.path.exists(path):
             os.remove(path)
-            
-    
 
 def image_to_pdf_scanned():
     pass
