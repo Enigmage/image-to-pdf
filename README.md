@@ -11,4 +11,4 @@ Make sure python3, pip3, and pipenv are installed !!
 - Navigate to project directory
 - Run `$ pipenv shell` to activate virtaul environment.
 - Then to install all dependencies execute `$ pipenv install`
-- Finally to run the app enter ` $ gunicorn run:app --timeout 120 ` 
+- Finally to run the app enter ` $ gunicorn run:app --timeout 300 ` 
