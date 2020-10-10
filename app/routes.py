@@ -26,15 +26,12 @@ def process():
                 img.save(os.path.join(app.config['UPLOAD_PATH'], image_name))
                 filenames.append(image_name)
 
-            else:
-                pass # Error handling
-
         try:
             utils.image_to_pdf_normal(filenames, res_name)
             utils.remove_files(filenames)
             return render_template('download.html', filename = f"{res_name}.pdf")
         except:
-            return "There was some error!!" # Improve error handling
+            return "There was some error in generating pdf!!" # Improve error handling
 
 
 @app.route('/download/<filename>')
