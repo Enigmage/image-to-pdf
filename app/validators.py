@@ -1,4 +1,4 @@
-import imghdr 
+import imghdr
 from app import app
 
 # Validating file type

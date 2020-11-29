@@ -1,5 +1,4 @@
 import os
-
 from dotenv import load_dotenv
 
 basedir = os.path.abspath(os.path.dirname(__file__))
@@ -11,6 +10,7 @@ if not os.path.exists(os.path.join(basedir, 'input')):
     
 if not os.path.exists(os.path.join(basedir, 'output')):
     os.makedirs(os.path.join(basedir, 'output'))
+
 
 class Config:
     SECRET_KEY = os.environ.get('SECRET_KEY')

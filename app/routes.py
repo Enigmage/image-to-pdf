@@ -50,4 +50,3 @@ def download(filename):
         headers = {'Content-Disposition':'attachment', 'filename':filename}
     )
 #    return send_file(os.path.join(app.config['DOWNLOAD_PATH'],filename), as_attachment=True)
-
