@@ -16,7 +16,7 @@ class Config:
     FLASK_APP = os.environ.get('FLASK_APP')
     FLASK_ENV = os.environ.get('FLASK_ENV')
     SAFE_EXTENSIONS = set(["jpg", "png", "jpeg"])
-    MAX_CONTENT_LENGTH = 50*1024*1024
+    MAX_CONTENT_LENGTH = 80*1024*1024
     UPLOAD_PATH = os.path.join(basedir, 'input')
     DOWNLOAD_PATH = os.path.join(basedir, 'output')
 
