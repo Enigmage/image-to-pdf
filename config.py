@@ -11,7 +11,6 @@ if not os.path.exists(os.path.join(basedir, 'input')):
 if not os.path.exists(os.path.join(basedir, 'output')):
     os.makedirs(os.path.join(basedir, 'output'))
 
-
 class Config:
     SECRET_KEY = os.environ.get('SECRET_KEY')
     FLASK_APP = os.environ.get('FLASK_APP')
