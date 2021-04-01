@@ -4,6 +4,7 @@ import os
 from app import app, utils, validators 
 
 
+
 @app.route('/')
 def index():
     return render_template('index.html')
@@ -31,7 +32,7 @@ def process():
             utils.remove_files(filenames)
             return render_template('download.html', filename = f"{res_name}.pdf")
         except:
-            return "There was some error in generating pdf!!" # Improve error handling
+            return "There was some error in generating pdf!" # Improve error handling
 
 
 @app.route('/download/<filename>')
